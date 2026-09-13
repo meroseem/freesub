@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "64.49.38.3",
+      "server_port": 8443,
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.autodesk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
       "server": "185.79.138.71",
       "server_port": 8080,
       "password": "h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT",
@@ -17,8 +41,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "156.226.168.221",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
+      "server": "hk3n.wxgqlfx.vip",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -27,7 +51,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -42,7 +66,8 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
       ]
     },
     {
@@ -50,7 +75,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,24 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: it.kanzelo.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0ecf2aa4-0ae7-1a4f-5455-b116c864542d
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 104.165.205.42
   port: 8443
   udp: true
   type: hysteria2
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 151.242.2.81
   port: 443
   udp: true
@@ -43,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
