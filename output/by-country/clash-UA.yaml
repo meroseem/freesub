@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 172.67.67.178
+  server: 104.24.30.89
   port: 443
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
   reality-opts:
     public-key: TWaatavWGcWV-E7c4AXmBXypLKJzm6eR3FGG61spayQ
   servername: www.sony.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
