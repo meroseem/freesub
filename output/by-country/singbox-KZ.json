@@ -4,55 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "password": "c0c17d1da2c2c9299d5094c8",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-3e9698.ezaccess1ec1f0c.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoia1pyRFFaUlU0eSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "headers": {
-          "Host": "ez-3e9698.ezaccess1ec1f0c.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-      "server": "62.233.39.9",
-      "server_port": 8443,
-      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "91.224.87.22",
+      "server_port": 9882,
+      "uuid": "76186f1e-3062-4a2b-98c2-fab3c61a9511",
       "tls": {
         "enabled": true,
-        "server_name": "dl.dell.com",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
-          "short_id": ""
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": "aabb"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "TunService"
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -60,16 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
