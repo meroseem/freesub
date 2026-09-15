@@ -5,27 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.97.6
-  port: 2052
+  server: www.shopify.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 188.114.97.6
-  port: 2052
+  server: www.shopify.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /hls/cctv5phd.m3u8
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: guanwang.awsno.com
 proxy-groups:
 - name: PROXIES
   type: select

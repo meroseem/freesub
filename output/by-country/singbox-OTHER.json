@@ -4,32 +4,42 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+        }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/hls/cctv5phd.m3u8",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "guanwang.awsno.com"
         }
       }
     },
