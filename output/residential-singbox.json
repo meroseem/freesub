@@ -4,76 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-      "server": "104.21.5.173",
-      "server_port": 443,
-      "uuid": "7c6a566b-4c4a-b8f2-1719-a3096b424141",
-      "tls": {
-        "enabled": true,
-        "server_name": "peekconfigg.vipserver1-39d.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "peekconfigg.vipserver1-39d.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe",
-      "server": "104.21.14.116",
-      "server_port": 443,
-      "uuid": "566c0473-382e-aabb-c62a-f5bb00000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-4b5fd4.appelidmymat.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "ez-4b5fd4.appelidmymat.workers.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "36.224.152.189",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "r3mrcg001287h3p.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-        "🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-        "🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

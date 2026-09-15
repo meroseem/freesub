@@ -4,31 +4,42 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "188.132.174.236",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
+      "server": "104.20.6.153",
+      "server_port": 8880,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "transport": {
+        "type": "ws",
+        "path": "/j100sy9wn073cxbvir",
+        "headers": {
+          "Host": "index.harmonica02.workers.dev"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "107.161.174.26",
-      "server_port": 443,
-      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
-      "flow": "xtls-rprx-vision",
+      "server": "104.17.169.13",
+      "server_port": 2053,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
       "tls": {
         "enabled": true,
-        "server_name": "books.blackbigdog.com",
+        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/axch1mttbxz2k55y01",
+        "headers": {
+          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
         }
       }
     },

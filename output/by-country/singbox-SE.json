@@ -4,15 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "server": "143.246.193.215",
+      "server_port": 443,
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": true
+        "server_name": "www.blocket.se",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "91.186.216.100",
+      "server_port": 7005,
+      "uuid": "ac64aec6-85ee-4fc7-b34b-60a7bcf236ec",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4",
+          "short_id": ""
+        }
       }
     },
     {
@@ -20,14 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
