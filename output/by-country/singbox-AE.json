@@ -6,21 +6,23 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "5059a06c-ed43-48d8-a276-b202c55019e8",
-      "flow": "xtls-rprx-vision",
+      "server": "172.67.221.230",
+      "server_port": 443,
+      "uuid": "ee556a4f-d9f6-44de-af02-42c51659416a",
       "tls": {
         "enabled": true,
-        "server_name": "tradingview.com",
+        "server_name": "novantunnel.tech",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-          "short_id": ""
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Novan-AE9",
+        "headers": {
+          "Host": "novantunnel.tech"
         }
       }
     },
@@ -43,16 +45,34 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+      "server": "31.58.181.88",
+      "server_port": 8443,
+      "uuid": "1e158ab2-d28a-41c8-b31d-8ea2d8706fe7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
       "server": "srv-21bac9.vless.monster",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
       "tls": {
         "enabled": true,
         "server_name": "srv-21bac9.vless.monster",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ]
+        "insecure": false
       },
       "transport": {
         "type": "grpc",
@@ -60,29 +80,39 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+      "server": "45.130.125.201",
+      "server_port": 80,
+      "uuid": "dc8a9493-c54a-459e-d060-81a700000001",
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "nahan-core.netizo09.workers.dev"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
       "server": "85.204.107.181",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaohe",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
+        "type": "ws"
       }
     },
     {
@@ -94,7 +124,9 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaohe"
       ]
     },
     {
@@ -105,7 +137,9 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

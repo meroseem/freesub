@@ -5,15 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "172.64.32.108",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "104.64.59.22",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkkk-8oc.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "kkkk-8oc.pages.dev"
         }
       }
     },
@@ -22,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

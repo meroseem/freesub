@@ -6,6 +6,43 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "104.18.34.14",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+      "server": "50.62.89.123",
+      "server_port": 443,
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
+      "tls": {
+        "enabled": true,
+        "server_name": "notls.lukongtou.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
       "server": "104.21.70.21",
       "server_port": 8080,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -19,8 +56,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "hk3n.wxgqlfx.vip",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe",
+      "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -29,7 +66,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -44,7 +81,9 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe"
       ]
     },
     {
@@ -52,7 +91,9 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
