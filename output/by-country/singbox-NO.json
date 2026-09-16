@@ -15,7 +15,7 @@
         "server_name": "bowandbead.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -35,7 +35,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -65,22 +65,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 04 - xiaohe",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
         "🇳🇴 挪威 (Norway) 02 - xiaohe",
-        "🇳🇴 挪威 (Norway) 03 - xiaohe",
-        "🇳🇴 挪威 (Norway) 04 - xiaohe"
+        "🇳🇴 挪威 (Norway) 03 - xiaohe"
       ]
     },
     {
@@ -89,8 +80,7 @@
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
         "🇳🇴 挪威 (Norway) 02 - xiaohe",
-        "🇳🇴 挪威 (Norway) 03 - xiaohe",
-        "🇳🇴 挪威 (Norway) 04 - xiaohe"
+        "🇳🇴 挪威 (Norway) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
