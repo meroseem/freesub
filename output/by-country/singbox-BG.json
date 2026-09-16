@@ -47,36 +47,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
-      "server": "104.152.48.248",
-      "server_port": 443,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
-      "tls": {
-        "enabled": true,
-        "server_name": "kkkk-8oc.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "kkkk-8oc.pages.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
       ]
     },
     {
@@ -84,8 +60,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
