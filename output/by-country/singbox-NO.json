@@ -5,24 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "207.148.112.220",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
+      "server": "46.29.238.32",
+      "server_port": 40443,
+      "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/discuss?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4",
+          "short_id": "7606"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
