@@ -32,6 +32,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 7dba81fc3a0b.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 82259754d625.oylfmxz.cn
   port: 443
