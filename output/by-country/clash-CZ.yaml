@@ -5,32 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.3
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tr/ox5zBiRQjs2Rscy0XwxXY2ZzE?ed=2560
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 8.6.112.9
-  port: 443
+  server: 172.67.130.187
+  port: 2053
   udp: true
   type: vless
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   tls: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  servername: FaNs.livErpoOl.qZZ.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+      Host: fans.liverpool.qzz.io
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.185.188
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 153.76.185.186
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 153.76.185.189
   port: 3090
   udp: true
@@ -39,7 +46,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -51,6 +58,20 @@ proxies:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
   client-fingerprint: ''
+- name: 🇨🇿 捷克 (Czech) 06 - xiaohe
+  server: 95.85.89.70
+  port: 81
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trade?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +81,8 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +92,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 rules:
 - MATCH,PROXIES
