@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.64.209",
+      "tag": "🇬🇹 GT 01 - xiaohe",
+      "server": "185.47.254.251",
       "server_port": 443,
-      "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
+      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "6-M13.0eE25773-d3d3-479D-A8Ff-3F51d1D20031.kdNs.fR",
-        "insecure": false,
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ED3ZQPu7lqyeDGD58KabZ",
-        "headers": {
-          "Host": "6-M13.0ee25773-D3D3-479D-a8ff-3F51d1d20031.kDnS.fr"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
+          "short_id": "6c059ecfddf9b179"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇬🇹 GT 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇬🇹 GT 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
