@@ -6,21 +6,24 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "179.255.191.40",
-      "server_port": 8443,
-      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
+      "server": "151.242.2.81",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
-        "server_name": "switz.luxes.network",
+        "server_name": "cf9.rumedia-cdn.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/assets"
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
       }
     },
     {
