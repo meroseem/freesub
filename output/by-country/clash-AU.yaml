@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   udp: true
   type: vmess
@@ -24,7 +24,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: au1.gsafevpnapi.com
   port: 20270
@@ -38,21 +38,6 @@ proxies:
     short-id: e6a5a4a9115456de
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: nova.freshnet.ir
-  port: 2082
-  udp: true
-  type: vless
-  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
-  tls: true
-  servername: nova.freshnet.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cats/FslNz
-    headers:
-      Host: nova.freshnet.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +46,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +54,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
