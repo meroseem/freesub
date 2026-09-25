@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "103.215.218.158",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "162.249.126.13",
+      "server_port": 8081,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
