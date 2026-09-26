@@ -5,47 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 66.81.247.155
-  port: 2083
+  server: 188.114.97.8
+  port: 8443
   udp: true
   type: vless
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
   tls: true
-  servername: testmikonim.hydrymhmdamyn7.workers.dev
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /OAZko425kNFF0PpQ
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 162.159.152.4
-  port: 443
+  server: 194.87.59.26
+  port: 2085
   udp: true
   type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 13.143.181.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a8d2c3f-d6dd-0004-81d8-cff23d8364ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38
-  servername: msk1.maxtelemost.com
-  client-fingerprint: safari
+  uuid: 720814fb-e38e-4570-97a7-c5df60352d37
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
