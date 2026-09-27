@@ -5,24 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.20.17.127",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+      "server": "cf.877774.xyz",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-ef859652a80e",
+      "uuid": "97532b08-357e-4140-a6f0-8e07f2ed3327",
       "tls": {
         "enabled": true,
-        "server_name": "trex-panel-nubj0s.samifakor.workers.dev",
+        "server_name": "yf.962456.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/TrexBridge/ef859652a80e",
+        "path": "/proxyip=kr.william.us.ci",
         "headers": {
-          "Host": "trex-panel-nubj0s.samifakor.workers.dev"
+          "Host": "yf.962456.xyz"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

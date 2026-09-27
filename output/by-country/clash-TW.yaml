@@ -10,24 +10,42 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 85.237.207.49
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: a56619e2bed91121eabb97d20be207c3
-  sni: 85-237-207-49.liao.kdns.fr
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'https:'
+  sni: t.me
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 35.221.158.209
+  port: 32981
+  udp: true
+  type: vless
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
+  servername: www.sony.com
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 35.194.157.16
+  port: 43450
+  udp: true
+  type: vless
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  servername: www.amd.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +54,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +63,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - MATCH,PROXIES
