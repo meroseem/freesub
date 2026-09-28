@@ -16,7 +16,7 @@ proxies:
     public-key: trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA
     short-id: 6df42a2c
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 194.195.123.60
   port: 22368
