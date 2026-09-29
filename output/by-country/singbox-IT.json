@@ -4,11 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
@@ -19,12 +20,24 @@
       "password": "itzvpn@321"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
-      "server": "185.164.175.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "57.131.38.163",
+      "server_port": 2053,
+      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
+          "short_id": "5b8a942318178e7b"
+        }
+      }
     },
     {
       "type": "vless",
@@ -48,6 +61,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
+      "server": "us4.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "us4.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -55,7 +87,9 @@
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
-        "🇮🇹 意大利 (Italy) 04 - xiaohe"
+        "🇮🇹 意大利 (Italy) 04 - xiaohe",
+        "🇮🇹 意大利 (Italy) 05 - xiaohe",
+        "🇮🇹 意大利 (Italy) 06 - xiaohe"
       ]
     },
     {
@@ -65,7 +99,9 @@
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
-        "🇮🇹 意大利 (Italy) 04 - xiaohe"
+        "🇮🇹 意大利 (Italy) 04 - xiaohe",
+        "🇮🇹 意大利 (Italy) 05 - xiaohe",
+        "🇮🇹 意大利 (Italy) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
