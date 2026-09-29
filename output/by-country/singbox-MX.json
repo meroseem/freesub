@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇹 GT 01 - xiaohe",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
       "server": "185.47.254.251",
       "server_port": 443,
       "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
@@ -25,18 +25,40 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "server": "34.51.29.171",
+      "server_port": 443,
+      "uuid": "9ad81959-02c6-4679-a419-2af6a16ca07a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA",
+          "short_id": "dcabbf24adf88abc"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇹 GT 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇹 GT 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
