@@ -6,12 +6,19 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+  server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 62.77.158.1
   port: 443
   udp: true
@@ -24,20 +31,22 @@ proxies:
     short-id: 6a
   servername: online.1c.ru
   client-fingerprint: safari
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: lithuania-2.kochvpn.pw
-  port: 443
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  server: 176.123.165.180
+  port: 9881
   udp: true
   type: vless
-  uuid: 2923fef2-3b52-a9c2-cde4-c2343eb74a2c
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   tls: true
-  servername: lithuania-2.kochvpn.pw
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /stream/ws
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   server: 94.176.234.161
   port: 443
   udp: true
@@ -59,6 +68,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +78,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
 rules:
 - MATCH,PROXIES

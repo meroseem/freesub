@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 51.20.72.15
+  server: 51.20.86.152
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: surstreming.vvzzkontaktezzvv.garden
   port: 443
   udp: true
@@ -24,13 +31,6 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 51.20.86.152
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
