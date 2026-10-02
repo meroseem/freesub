@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "89.218.15.90",
-      "server_port": 10002,
-      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "104.21.82.226",
+      "server_port": 443,
+      "uuid": "36a857e4-f3d4-43aa-8b90-d7da849da989",
       "tls": {
         "enabled": true,
-        "server_name": "kz1.vpnjantit.com",
+        "server_name": "002.Inc-ElectROcElL-001-002.WoRKERS.DEV",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vpnjantit",
+        "path": "/eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
         "headers": {
-          "Host": "kz1.vpnjantit.com"
+          "Host": "002.inc-electrocell-001-002.workers.dev"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
