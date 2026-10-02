@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "188.42.145.180",
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+      "server": "104.18.155.229",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,25 +20,22 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/au-do",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "www.genflix.co.id.r3xxe.eu.cc"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
-      "server": "188.42.145.180",
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "208.103.161.5",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -49,9 +43,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
         }
       }
     },
@@ -60,16 +54,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
