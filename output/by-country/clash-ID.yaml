@@ -27,18 +27,20 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇩 印尼 (Indonesia) 03 - xiaohe
-  server: 104.18.32.87
-  port: 443
+  server: funagfr.alixxplay.com
+  port: 61847
   udp: true
-  type: trojan
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /trojan
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ
+    short-id: c761f990d786f2
+  servername: www.lamer.com.sg
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
