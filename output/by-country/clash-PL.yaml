@@ -14,19 +14,14 @@ proxies:
   ws-opts:
     path: /
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 95.85.254.221
-  port: 443
+  server: 70.34.255.101
+  port: 80
   udp: true
   type: vless
-  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
-  tls: true
-  reality-opts:
-    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
-  servername: samsung.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 202.78.163.237
   port: 443
@@ -36,6 +31,14 @@ proxies:
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 83.168.107.220
   port: 443
   udp: true
@@ -48,14 +51,6 @@ proxies:
     short-id: c56d4f1c
   servername: google.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 188.114.96.19
   port: 80
@@ -69,19 +64,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,7 +75,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,6 +86,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
