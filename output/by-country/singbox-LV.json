@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "104.165.205.46",
+      "server": "lv02.gotosvo.com",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
@@ -27,7 +27,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
