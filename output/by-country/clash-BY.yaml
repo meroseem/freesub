@@ -15,17 +15,33 @@ proxies:
   servername: console.surfweb.club
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
+  server: 89.125.96.93
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  tls: true
+  servername: wss.zazazuza.ru
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
 rules:
 - MATCH,PROXIES
